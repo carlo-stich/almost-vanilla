@@ -41,11 +41,17 @@ You can create "components" and include them in any html file inside the root `w
 
 3. Prevent folders/files from being copied to the build
 
-    If you don't want a component or component folder in your `dist` folder after building, use an underscore in front of the file/folder name.
-    
+    If you don't want a component or component folder to be included in your final dist folder after building, use an underscore (`_`) in front of the file or folder name:
+
+    A `_folder` will exclude the folder and all its contents from the build.
+
+    A `_file` will exclude only that file.
+
+    📌 Note: If a file is already inside an underscored folder (like `_components/`), you don’t need to prefix the file itself with an underscore.
+        
     <details>
     <summary>
-        Example
+        Example (expand)
     </summary>
 
     Change file/folder name to `/website/_components/button.html` or `/website/_button.html`
@@ -70,6 +76,7 @@ You can create "components" and include them in any html file inside the root `w
     ```
     
     </details>
+    <br>
 
 4. Use dynamic components
 
@@ -79,7 +86,7 @@ You can create "components" and include them in any html file inside the root `w
 
     <details>
     <summary>
-        Example
+        Example (expand)
     </summary>
 
     `components/button.html`
@@ -110,7 +117,7 @@ You can create "components" and include them in any html file inside the root `w
     
     <details>
     <summary>
-        Example
+        Example (expand)
     </summary>
 
     `components/button.html`

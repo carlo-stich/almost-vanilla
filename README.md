@@ -76,7 +76,6 @@ You can create "components" and include them in any html file inside the root `w
     ```
     
     </details>
-    <br>
 
 4. Use dynamic components
 
